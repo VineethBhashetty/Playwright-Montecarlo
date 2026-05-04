@@ -14,7 +14,7 @@ export class LoginPage {
     this.loginSignupLink = page.getByRole('link', { name: 'Login/Signup' });
     this.emailInput = page.getByRole('textbox', { name: 'E-mail/Mobile Number' });
     this.passwordInput = page.getByRole('textbox', { name: 'Password' });
-    this.loginButton = page.getByRole('button', { name: 'Login', exact: true });
+    this.loginButton = page.locator('//*[@id="customer_login"]/div[1]/button/span[1]');
     this.closePopup = page.getByTestId('authorize-modal-close-button');
   }
 
