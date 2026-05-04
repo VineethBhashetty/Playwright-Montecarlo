@@ -9,6 +9,6 @@ test('Login test', async ({ page }) => {
 
   await expect(
     page.locator('#shopify-section-sections--26903370170656__header')
-      .getByText('WOMEN Cardigans Pure Wool')
+      .getByText('WOMEN Cardigans Pure Wool').first()
   ).toBeVisible();
 });
